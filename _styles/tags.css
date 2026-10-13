@@ -11,9 +11,11 @@
 .tag {
   max-width: 100%;
   margin: 0;
-  padding: 5px 10px;
-  border-radius: 999px;
-  background: var(--secondary);
+  padding: 3px 8px;
+  border-radius: var(--rounded);
+  background: color-mix(in srgb, var(--secondary) 40%, transparent);
+  font-family: var(--code);
+  font-size: 0.85em;
   color: var(--text);
   text-decoration: none;
   overflow: hidden;

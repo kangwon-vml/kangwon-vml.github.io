@@ -9,6 +9,11 @@
   background: var(--background);
   overflow: hidden;
   box-shadow: var(--shadow);
+  transition: box-shadow var(--transition);
+}
+
+.citation:hover {
+  box-shadow: var(--shadow-hover);
 }
 
 .citation-image {
@@ -61,6 +66,8 @@
 }
 
 .citation-publisher {
+  font-family: var(--code);
+  font-size: 0.9em;
   text-transform: capitalize;
 }
 

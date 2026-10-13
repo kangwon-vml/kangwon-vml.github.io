@@ -17,4 +17,16 @@
   z-index: -1;
 }
 
+header.background,
+footer.background {
+  background: linear-gradient(120deg, var(--navy-start), var(--navy-end));
+}
+
+header.background:before,
+footer.background:before {
+  background-image: repeating-linear-gradient(0deg, var(--grid-line) 0 1px, transparent 1px 24px), repeating-linear-gradient(90deg, var(--grid-line) 0 1px, transparent 1px 24px), repeating-linear-gradient(0deg, var(--grid-line-major) 0 1px, transparent 1px 120px), repeating-linear-gradient(90deg, var(--grid-line-major) 0 1px, transparent 1px 120px);
+  background-size: auto;
+  opacity: 1;
+}
+
 /*# sourceMappingURL=background.css.map */

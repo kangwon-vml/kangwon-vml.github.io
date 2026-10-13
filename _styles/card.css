@@ -11,6 +11,11 @@
   overflow: hidden;
   box-shadow: var(--shadow);
   vertical-align: top;
+  transition: box-shadow var(--transition);
+}
+
+.card:hover {
+  box-shadow: var(--shadow-hover);
 }
 
 .card[data-style=small] {
