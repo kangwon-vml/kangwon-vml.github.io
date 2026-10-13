@@ -1,36 +1,42 @@
 ---
 ---
 
-// colors
+// colors · Deep Navy + Cyan
 [data-dark="false"] {
-  --primary: #0795d9;
+  --primary: #0b5cad;
   --secondary: #7dd3fc;
-  --text: #000000;
+  --text: #0a1628;
   --background: #ffffff;
-  --background-alt: #fafafa;
-  --light-gray: #e0e0e0;
-  --gray: #808080;
-  --dark-gray: #404040;
-  --overlay: #00000020;
+  --background-alt: #f2f6fa;
+  --light-gray: #dce4ee;
+  --gray: #5b6b80;
+  --dark-gray: #2b3a4e;
+  --overlay: #0a162814;
 }
 [data-dark="true"] {
-  --primary: #0795d9;
-  --secondary: #075985;
-  --text: #ffffff;
-  --background: #181818;
-  --background-alt: #1c1c1c;
-  --light-gray: #404040;
-  --gray: #808080;
-  --dark-gray: #b0b0b0;
+  --primary: #38bdf8;
+  --secondary: #0c4a6e;
+  --text: #e6eef7;
+  --background: #07111f;
+  --background-alt: #0c1a2c;
+  --light-gray: #1a2b40;
+  --gray: #62738a;
+  --dark-gray: #9fb0c4;
   --overlay: #ffffff10;
 }
 
 :root {
+  // header/footer blueprint background
+  --navy-start: #071a33;
+  --navy-end: #0b3a66;
+  --grid-line: #ffffff12;
+  --grid-line-major: #ffffff0d;
+
   // font families
-  --title: "Barlow", sans-serif;
-  --heading: "Barlow", sans-serif;
-  --body: "Barlow", sans-serif;
-  --code: "Roboto Mono", monospace;
+  --title: "Sora", "Noto Sans KR", sans-serif;
+  --heading: "Sora", "Noto Sans KR", sans-serif;
+  --body: "Noto Sans KR", sans-serif;
+  --code: "JetBrains Mono", monospace;
 
   // font sizes
   --large: 1.2rem;
@@ -38,17 +44,18 @@
   --xxl: 1.6rem;
 
   // font weights
-  --thin: 200;
+  --thin: 300;
   --regular: 400;
   --semi-bold: 500;
   --bold: 600;
 
   // text line spacing
-  --spacing: 2;
+  --spacing: 1.8;
   --compact: 1.5;
 
   // effects
-  --rounded: 3px;
-  --shadow: 0 0 10px 0 var(--overlay);
+  --rounded: 4px;
+  --shadow: 0 0 0 1px var(--light-gray);
+  --shadow-hover: 0 0 0 1px var(--primary);
   --transition: 0.2s ease;
 }

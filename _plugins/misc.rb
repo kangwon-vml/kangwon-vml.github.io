@@ -69,18 +69,14 @@ module Jekyll
 
     # from css text, find font family definitions and construct google font url
     def google_fonts(css)
-      names = regex_scan(css, '--\S*:\s*"(.*)",?.*;', false, true).sort.uniq
-      weights = regex_scan(css, '--\S*:\s(\d{3});', false, true).sort.uniq
-      url = "https://fonts.googleapis.com/css2?display=swap&"
+      # every quoted family name in a css variable (e.g. --body: "A", "B", sans-serif;)
+      names = css.scan(/^\s*--[\w-]+:\s*(".*);/).flatten
+        .flat_map { |value| value.scan(/"([^"]+)"/).flatten }
+        .sort.uniq
+      weights = css.scan(/--[\w-]+:\s*(\d{3});/).flatten.sort.uniq
+      url = "https://fonts.googleapis.com/css2?display=swap"
       for name in names do
-        name.sub!" ", "+"
-        url += "&family=#{name}:ital,wght@"
-        for ital in [0, 1] do
-          for weight in weights do
-            url += "#{ital},#{weight};"
-          end
-        end
-        url.delete_suffix!(";")
+        url += "&family=#{name.gsub(" ", "+")}:wght@#{weights.join(";")}"
       end
       return url
     end

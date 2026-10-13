@@ -1,9 +1,7 @@
 # site properties and page defaults
-title: kangwon-vml
+title: Virtual Motion Lab
 subtitle: 
-description: An engaging 1-3 sentence description of your lab.
-header: images/background.jpg
-footer: images/background.jpg
+description: Virtual Motion Lab (VML) at Kangwon National University researches AI, XR and motion graphics.
 proofer: false
 
 # site social media and other links

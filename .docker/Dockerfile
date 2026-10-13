@@ -13,7 +13,9 @@ RUN VERSION=$(grep -A 1 'BUNDLED WITH' Gemfile.lock | tail -n 1 | xargs); \
     bundle _${VERSION}_ install
 
 # install python
-RUN apt update && apt install -y python3 python3-pip
+# (debian bullseye is end-of-life, so its packages now live on archive.debian.org)
+RUN sed -i -e 's|deb.debian.org|archive.debian.org|g' -e '/bullseye-updates/d' /etc/apt/sources.list && \
+    apt -o Acquire::Check-Valid-Until=false update && apt install -y python3 python3-pip
 
 # install python packages
 RUN python3 -m pip install --no-cache-dir --upgrade --requirement requirements.txt
