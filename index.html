@@ -203,6 +203,10 @@
   
 
   
+    <link href="/_styles/hero.css" rel="stylesheet">
+  
+
+  
     <link href="/_styles/highlight.css" rel="stylesheet">
   
 
@@ -340,6 +344,8 @@
 
   
 
+  
+
 
 <!-- include all css in styles folder -->
 
@@ -379,7 +385,7 @@
 
 
 
-<header class="background" style="--image: url('')" data-dark="true" data-big>
+<header class="background" style="--image: url('')" data-dark="true">
   <a href="/" class="home">
     
       <span class="logo">
@@ -510,10 +516,61 @@
   
   
 
-  <section class="background" data-size="page">
-    <h1 id="kangwon-vmls-website">kangwon-vml’s Website</h1>
+  <section class="background" data-size="full" data-dark="true">
+    <!--
+  <background></background>
+  <dark>true</dark>
+  <size>full</size>
+-->
 
-<p>An engaging 1-3 sentence description of your lab.</p>
+<div class="hero">
+  <div class="hero-text">
+    
+      <p class="hero-kicker">Kangwon National University · Dept. of AI Content Engineering</p>
+    
+    <h1 class="hero-title">Virtual Motion Lab</h1>
+    
+      <p class="hero-tagline">We research AI, XR and motion graphics, building tools that capture, understand and generate motion for virtual worlds.</p>
+    
+    
+      <p class="hero-native">강원대학교 AI콘텐츠공학과 버츄얼모션랩</p>
+    
+    <div class="hero-buttons">
+      
+        
+
+
+
+  <div class="button-wrapper">
+    <a class="button" href="/research" data-style="" data-flip="" aria-label="fa-solid fa-arrow-right">
+      <i class="icon fa-solid fa-arrow-right"></i>
+      
+        <span>Our research</span>
+      
+    </a>
+  </div>
+
+
+      
+      
+        
+
+
+
+  <div class="button-wrapper">
+    <a class="button" href="/contact" data-style="outline" aria-label="button">
+      
+      
+        <span>Join the lab</span>
+      
+    </a>
+  </div>
+
+
+      
+    </div>
+  </div>
+</div>
   </section>
 
   
@@ -527,18 +584,64 @@
   <size></size>
 -->
 
-<h2 id="highlights">Highlights</h2>
+<p class="label">Research</p>
 
-<div class="feature">
-  <a href="/research" class="feature-image" aria-label="Our Research">
-    <img src="/images/photo.jpg" loading="lazy" alt="Our Research" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-  </a>
-  <div class="feature-text">
-    
-      <p class="feature-title">Our Research</p>
-    
-    
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+<h2 id="research-areas">Research Areas</h2>
+
+<div class="areas">
+  
+    <div class="area">
+      <i class="icon fa-solid fa-brain"></i>
+      <p class="area-title">AI</p>
+      <p class="area-text">Learning-based methods for generating and understanding human motion, characters and visual content.</p>
+      
+        <div class="area-tags">
+          
+            <span class="tag">generative models</span>
+          
+            <span class="tag">motion learning</span>
+          
+            <span class="tag">computer vision</span>
+          
+        </div>
+      
+    </div>
+  
+    <div class="area">
+      <i class="icon fa-solid fa-vr-cardboard"></i>
+      <p class="area-title">XR</p>
+      <p class="area-text">Immersive VR and AR experiences with embodied avatars and natural, body-based interaction.</p>
+      
+        <div class="area-tags">
+          
+            <span class="tag">VR / AR</span>
+          
+            <span class="tag">avatars</span>
+          
+            <span class="tag">interaction</span>
+          
+        </div>
+      
+    </div>
+  
+    <div class="area">
+      <i class="icon fa-solid fa-wave-square"></i>
+      <p class="area-title">Motion Graphics</p>
+      <p class="area-text">Procedural animation, real-time effects and motion design for media and interactive content.</p>
+      
+        <div class="area-tags">
+          
+            <span class="tag">procedural animation</span>
+          
+            <span class="tag">real-time rendering</span>
+          
+            <span class="tag">motion design</span>
+          
+        </div>
+      
+    </div>
+  
+</div>
 
 <div class="button-wrapper">
     <a class="button" href="/research" data-style="bare" data-flip="" aria-label="fa-solid fa-arrow-right">
@@ -548,58 +651,6 @@
       
     </a>
   </div>
-
-
-  </div>
-</div>
-
-<div class="feature" data-flip="">
-  <a href="/projects" class="feature-image" aria-label="Our Projects">
-    <img src="/images/photo.jpg" loading="lazy" alt="Our Projects" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-  </a>
-  <div class="feature-text">
-    
-      <p class="feature-title">Our Projects</p>
-    
-    
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-
-<div class="button-wrapper">
-    <a class="button" href="/projects" data-style="bare" data-flip="" aria-label="fa-solid fa-arrow-right">
-      <i class="icon fa-solid fa-arrow-right"></i>
-      
-        <span>Browse our projects</span>
-      
-    </a>
-  </div>
-
-
-  </div>
-</div>
-
-<div class="feature">
-  <a href="/team" class="feature-image" aria-label="Our Team">
-    <img src="/images/photo.jpg" loading="lazy" alt="Our Team" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-  </a>
-  <div class="feature-text">
-    
-      <p class="feature-title">Our Team</p>
-    
-    
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-
-<div class="button-wrapper">
-    <a class="button" href="/team" data-style="bare" data-flip="" aria-label="fa-solid fa-arrow-right">
-      <i class="icon fa-solid fa-arrow-right"></i>
-      
-        <span>Meet our team</span>
-      
-    </a>
-  </div>
-
-
-  </div>
-</div>
   </section>
 
 
