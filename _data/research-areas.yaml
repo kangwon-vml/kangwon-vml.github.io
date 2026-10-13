@@ -1,0 +1,24 @@
+# research areas shown on the home and research pages
+- title: AI
+  icon: fa-solid fa-brain
+  description: Learning-based methods for generating and understanding human motion, characters and visual content.
+  tags:
+    - generative models
+    - motion learning
+    - computer vision
+
+- title: XR
+  icon: fa-solid fa-vr-cardboard
+  description: Immersive VR and AR experiences with embodied avatars and natural, body-based interaction.
+  tags:
+    - VR / AR
+    - avatars
+    - interaction
+
+- title: Motion Graphics
+  icon: fa-solid fa-wave-square
+  description: Procedural animation, real-time effects and motion design for media and interactive content.
+  tags:
+    - procedural animation
+    - real-time rendering
+    - motion design

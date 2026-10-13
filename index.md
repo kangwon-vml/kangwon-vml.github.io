@@ -1,17 +1,26 @@
 ---
 ---
 
-# kangwon-vml's Website
+{% include section.html size="full" dark=true %}
 
-An engaging 1-3 sentence description of your lab.
+{%
+  include hero.html
+  kicker="Kangwon National University · Dept. of AI Content Engineering"
+  tagline="We research AI, XR and motion graphics, building tools that capture, understand and generate motion for virtual worlds."
+  native="강원대학교 AI콘텐츠공학과 버츄얼모션랩"
+  link="research"
+  link-text="Our research"
+  link2="contact"
+  link2-text="Join the lab"
+%}
 
 {% include section.html %}
 
-## Highlights
+<p class="label">Research</p>
 
-{% capture text %}
+## Research Areas
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+{% include research-areas.html %}
 
 {%
   include button.html
@@ -20,62 +29,4 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
   icon="fa-solid fa-arrow-right"
   flip=true
   style="bare"
-%}
-
-{% endcapture %}
-
-{%
-  include feature.html
-  image="images/photo.jpg"
-  link="research"
-  title="Our Research"
-  text=text
-%}
-
-{% capture text %}
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-
-{%
-  include button.html
-  link="projects"
-  text="Browse our projects"
-  icon="fa-solid fa-arrow-right"
-  flip=true
-  style="bare"
-%}
-
-{% endcapture %}
-
-{%
-  include feature.html
-  image="images/photo.jpg"
-  link="projects"
-  title="Our Projects"
-  flip=true
-  style="bare"
-  text=text
-%}
-
-{% capture text %}
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-
-{%
-  include button.html
-  link="team"
-  text="Meet our team"
-  icon="fa-solid fa-arrow-right"
-  flip=true
-  style="bare"
-%}
-
-{% endcapture %}
-
-{%
-  include feature.html
-  image="images/photo.jpg"
-  link="team"
-  title="Our Team"
-  text=text
 %}

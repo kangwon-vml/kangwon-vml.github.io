@@ -1,0 +1,27 @@
+{% comment %}
+  home page hero: lab name, tagline, buttons
+  use inside a full-size section, e.g. {% include section.html size="full" dark=true %}
+{% endcomment %}
+
+<div class="hero">
+  <div class="hero-text">
+    {% if include.kicker %}
+      <p class="hero-kicker">{{ include.kicker }}</p>
+    {% endif %}
+    <h1 class="hero-title">{{ include.title | default: site.title }}</h1>
+    {% if include.tagline %}
+      <p class="hero-tagline">{{ include.tagline }}</p>
+    {% endif %}
+    {% if include.native %}
+      <p class="hero-native">{{ include.native }}</p>
+    {% endif %}
+    <div class="hero-buttons">
+      {% if include.link %}
+        {% include button.html link=include.link text=include.link-text icon="fa-solid fa-arrow-right" flip=true %}
+      {% endif %}
+      {% if include.link2 %}
+        {% include button.html link=include.link2 text=include.link2-text style="outline" %}
+      {% endif %}
+    </div>
+  </div>
+</div>

@@ -1,0 +1,20 @@
+{% comment %}
+  grid of research area cards, from _data/research-areas.yaml
+{% endcomment %}
+
+<div class="areas">
+  {% for area in site.data.research-areas %}
+    <div class="area">
+      {% include icon.html icon=area.icon %}
+      <p class="area-title">{{ area.title }}</p>
+      <p class="area-text">{{ area.description }}</p>
+      {% if area.tags %}
+        <div class="area-tags">
+          {% for tag in area.tags %}
+            <span class="tag">{{ tag }}</span>
+          {% endfor %}
+        </div>
+      {% endif %}
+    </div>
+  {% endfor %}
+</div>
